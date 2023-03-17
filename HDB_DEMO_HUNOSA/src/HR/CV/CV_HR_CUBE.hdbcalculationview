@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_HR_CUBE" applyPrivilegeType="NONE" dataCategory="DIMENSION" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false" runWithInvokerPrivileges="false">
+<descriptions defaultDescription="CV_HR_CUBE"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="pa0002">
+    <resourceUri>pa0002</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="pa0002">
+  <attributes>
+    <attribute id="PERNR" order="1" semanticType="empty" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERNR"/>
+      <keyMapping columnObjectName="pa0002" columnName="PERNR"/>
+    </attribute>
+    <attribute id="NACHN" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NACHN"/>
+      <keyMapping columnObjectName="pa0002" columnName="NACHN"/>
+    </attribute>
+    <attribute id="NACH2" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NACH2"/>
+      <keyMapping columnObjectName="pa0002" columnName="NACH2"/>
+    </attribute>
+    <attribute id="VORNA" order="4" displayAttribute="false" attributeHierarchyActive="false" hidden="true">
+      <descriptions defaultDescription="VORNA"/>
+      <keyMapping columnObjectName="pa0002" columnName="VORNA"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/></logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="100" y="105"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

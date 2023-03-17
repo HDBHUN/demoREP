@@ -1,0 +1,24 @@
+ID: DEMO_HUNOSA_PROYECT
+_schema-version: '2.1'
+version: 0.0.1
+modules:
+  - name: HDB_DEMO_HUNOSA
+    type: hdb
+    path: HDB_DEMO_HUNOSA
+    requires:
+      - name: hdi_HDB_DEMO_HUNOSA
+      - name: cross_container_service
+        properties:
+          key: ServiceName_1
+          service: '~{the-service-name}'
+resources:
+  - name: hdi_HDB_DEMO_HUNOSA
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
+  - name: cross_container_service
+    type: org.cloudfoundry.existing-service
+    parameters:
+      service-name: CROSS_SCHEMA_SAPABAP1
+    properties:
+      the-service-name: '${service-name}'
