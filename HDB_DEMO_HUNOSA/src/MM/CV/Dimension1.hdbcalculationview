@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="Dimension1" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Dimension1"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="ekko">
+    <resourceUri>ekko</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="ekko">
+  <attributes>
+    <attribute id="EBELN" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EBELN"/>
+      <keyMapping columnObjectName="ekko" columnName="EBELN"/>
+    </attribute>
+    <attribute id="BUKRS" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS"/>
+      <keyMapping columnObjectName="ekko" columnName="BUKRS"/>
+    </attribute>
+    <attribute id="BSTYP" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSTYP"/>
+      <keyMapping columnObjectName="ekko" columnName="BSTYP"/>
+    </attribute>
+    <attribute id="BSART" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSART"/>
+      <keyMapping columnObjectName="ekko" columnName="BSART"/>
+    </attribute>
+    <attribute id="BSAKZ" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSAKZ"/>
+      <keyMapping columnObjectName="ekko" columnName="BSAKZ"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="92" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario> 

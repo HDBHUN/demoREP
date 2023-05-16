@@ -1,9 +1,15 @@
 {
- "pa0002": {
- "target": {
- "object": "PA0002",
- "schema": "SAPABAP1"
- }
- 
- }
+  "pa0002": {
+    "target": {
+      "object": "PA0002",
+      "schema": "SAPABAP1"
+    }
+  },
+  "ekko": {
+    "target": {
+      "object": "EKKO",
+      "schema": "SAPABAP1",
+      "database": "HU4"
+    }
+  }
 }
